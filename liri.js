@@ -30,13 +30,26 @@ if (input === "movie-this") {
         spotifySeach(search);
     }
 
-} else {
-    console.log("errror");
+}
+// if user input do-what-it-says app going to read data from random.txt and use that data
+// to fatch i want it that way with command spontify
+else if (input === "do-what-it-says") {
+    fs.readFile('random.txt', 'utf8', function(err, data) {
+        if (err) {
+            return console.log(err);
+        }
+        //save data in array for next use 
+        var dataArr = data.split(",");
+        //call the function spontifySearch
+        spotifySeach(dataArr[1]);
+    })
+
 }
 
 function fetch(url) {
     axios.get(url)
         .then(function(response) {
+            //saving the data to be loged in data variable
             var data = `
                     * The movie Title ${response.data.Title}
                     * Year the movie came out ${response.data.Year}
@@ -48,6 +61,7 @@ function fetch(url) {
                     * Actors in the movie ${response.data.Actors}
                     ====================================================================`;
             console.log(data);
+            //append log.txt file with data
             fs.appendFile('log.txt', data, function(err) {
                 if (err) {
                     console.log(err)
