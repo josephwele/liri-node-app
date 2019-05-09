@@ -2,6 +2,7 @@
 require("dotenv").config()
 var keys = require("./keys.js")
 var axios = require('axios')
+var moment = require('moment')
 var Spotify = require('node-spotify-api')
 var spotify = new Spotify(keys.spotify)
     // grap the input from the user her process.argv.length-1 is used not to include the actress name
@@ -18,15 +19,15 @@ if (input === "movie-this") {
         fetch(url);
     }
 } else if (input === "spotify-this") {
-    console.log("i am spotify", search);
     spotify.search({ type: 'track', query: `${search}` }, function(err, data) {
         if (err) {
             return console.log('Error occurred: ' + err);
         }
-        console.log(data.tracks.items[0].name);
-        console.log(data.tracks.items[0].artists[0]);
-        console.log(data.tracks.items[0].external_urls.spotify);
-        console.log(data.tracks.items[0].album.name);
+        console.log("Name of the song:", data.tracks.items[0].name);
+        console.log("Artist's Name:", data.tracks.items[0].artists[0].name);
+        console.log("Link to the song:", data.tracks.items[0].external_urls.spotify);
+        console.log("release date:", moment(data.tracks.items[0].album.release_date).format("dddd MMMM Do YYYY"));
+        console.log("Album Name", data.tracks.items[0].album.name);
 
     });
 } else {
