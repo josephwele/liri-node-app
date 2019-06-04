@@ -7,7 +7,7 @@ takes command line input language and search for bands in a town
 **when user input movie-this**
 
 *liri will out put detail info about the movie that the user entered*
-![image](assets/capture.png)
+![image](assets/Capture.png)
 
 ***************************************
 **When user input do-what-it-says**
