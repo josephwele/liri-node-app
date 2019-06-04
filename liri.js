@@ -81,12 +81,12 @@ function spotifySeach(search) {
             return console.log('Error occurred: ' + err);
         }
         var data = `
-        Name of the song: ${data.tracks.items[0].name}
-        Artist's Name:${data.tracks.items[0].artists[0].name}
-        Link to the song:${data.tracks.items[0].external_urls.spotify}
-        release date:${moment(data.tracks.items[0].album.release_date).format("dddd MMMM Do YYYY")}
-        Album Name:${data.tracks.items[0].album.name}
-        ============================================================================================`
+                        Name of the song: ${data.tracks.items[0].name}
+                        Artist's Name:${data.tracks.items[0].artists[0].name}
+                        Link to the song:${data.tracks.items[0].external_urls.spotify}
+                        release date:${moment(data.tracks.items[0].album.release_date).format("dddd MMMM Do YYYY")}
+                        Album Name:${data.tracks.items[0].album.name}
+                        ============================================================================`
         console.log(data);
         fs.appendFile('log.txt', data, function(err) {
             if (err) {

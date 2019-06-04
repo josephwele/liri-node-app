@@ -14,3 +14,33 @@
         release date:Tuesday October 23rd 2001
         Album Name:The Hits--Chapter One
         ============================================================================================
+                    * The movie Title The One
+                    * Year the movie came out 2001
+                    * IMDB Rating of the movie 5.9
+                    * Rotten Tomatoes Rating of the movie 14%
+                    * Country where the movie was produced USA
+                    * Language of the movie English
+                    * Plot of the movie A rogue Multiverse agent goes on a manhunt for versions of himself, getting stronger with each kill. With only one version remaining, he races against the clock to finish him and become "The One."
+                    * Actors in the movie Jet Li, Carla Gugino, Delroy Lindo, Jason Statham
+                    ====================================================================
+                    * The movie Title The One
+                    * Year the movie came out 2001
+                    * IMDB Rating of the movie 5.9
+                    * Rotten Tomatoes Rating of the movie 14%
+                    * Country where the movie was produced USA
+                    * Language of the movie English
+                    * Plot of the movie A rogue Multiverse agent goes on a manhunt for versions of himself, getting stronger with each kill. With only one version remaining, he races against the clock to finish him and become "The One."
+                    * Actors in the movie Jet Li, Carla Gugino, Delroy Lindo, Jason Statham
+                    ====================================================================
+                        Name of the song: Hero
+                        Artist's Name:Skillet
+                        Link to the song:https://open.spotify.com/track/4CbKVDZkYKdv69I4bCaKUq
+                        release date:Friday August 21st 2009
+                        Album Name:Awake
+                        ============================================================================
+                        Name of the song: I Want It That Way
+                        Artist's Name:Backstreet Boys
+                        Link to the song:https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
+                        release date:Tuesday October 23rd 2001
+                        Album Name:The Hits--Chapter One
+                        ============================================================================
